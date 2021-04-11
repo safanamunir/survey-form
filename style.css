@@ -2,5 +2,15 @@ body{
     /* font-family: 'New Tegomin', serif; */
     font-family: 'Kiwi Maru', serif;
     /* background-color: lightgray; */
-
+    background-color: lightgrey;
+}
+header{
+    text-align: center;
+    padding-top: 50px;
+}
+#form-div{
+    width: 70%;
+ /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
 }

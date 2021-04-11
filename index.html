@@ -20,22 +20,74 @@
     </header>
     <main>
         <div id="form-div">
-            <form id="survey-form" action="">
-                <label for="formInput1" class="form-label" id="name-label">Name</label>
-                <input id="name" type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            <form id="survey-form">
+            
+                <label class="form-label" id="name-label">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Name" required>
+                <br>
 
-                <label for="formInput2" class="form-label" id="email-label">Email</label>
+                <label class="form-label" id="email-label" >Email</label>
                 <input id="email" type="email" class="form-control" placeholder="name@example.com" required>
+                <br>
 
-                <label for="formInput3" class="form-label" id="number-label">Age(optional)</label>
+                <label class="form-label" id="number-label">Age(optional)</label>
                 <input id="number" type="number" class="form-control" min="5" max="18" placeholder="Age" aria-label="Age">
+                <br>
 
-                <select id="dropdown" class="form-select" aria-label="visit the library">
+                <label class="form-label" id="dropdown">How often do you visit the library? </label>
+                <select  class="form-select"  required>
                     <option selected>I visit the library</option>
                     <option value="1">Every day</option>
                     <option value="2">Every week</option>
                     <option value="3">Sometimes</option>
                   </select>
+                  <br>
+
+                <label class="form-label" id="radiobuttons">What do you do when u come to the library?</label>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Access the computers
+                </label> 
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Look for books
+                </label> 
+                </div>
+                <br> 
+
+                <label  class="form-label" id="checkboxes">What would you like to see improved? (Check all that apply)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="environment" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Library Environment
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="books" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Collection of books
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="computers" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Computers
+                    </label>
+                  </div>
+                  <br>
+
+                    <label class="form-label" id="textarea">Any comments or suggestions?</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                    <br>
+                   
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                  </div>
+
+                
             </form>
         </div>
     </main>
